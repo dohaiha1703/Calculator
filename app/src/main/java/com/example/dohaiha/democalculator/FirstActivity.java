@@ -24,9 +24,7 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
         calculatorFragment = new CalculatorFragment();
-
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
         transaction.add(R.id.vpContainer, calculatorFragment);
 
         btnOpenCalculator = findViewById(R.id.btnOpenCalculator);

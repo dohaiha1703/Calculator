@@ -59,7 +59,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
 
         super.onActivityCreated(savedInstanceState);
 
-       initView();
+        initView();
 
         onclickEvent();
         setPreferenceSave();
@@ -395,7 +395,7 @@ public class CalculatorFragment extends Fragment implements View.OnClickListener
         return lastReult;
     }
 
-    public void setPreferenceSave(){
+    public void setPreferenceSave() {
         SharedPreferences preferences = getActivity().getSharedPreferences("save", MODE_PRIVATE);
         String getStringFromPreference = preferences.getString("saveResult", "0");
         tvResult.setText(getStringFromPreference);

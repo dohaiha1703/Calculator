@@ -40,11 +40,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         setContentView(R.layout.activity_main);
         initView();
         onclickEvent();
-
         valueOne = 0;
         valueTwo = 0;
-
-
     }
 
     public void initView() {
